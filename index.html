@@ -1,55 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AJ Ferguson</title>
-<meta name="description" content="AJ Ferguson. Knowledge management, content strategy, and information architecture. Research, plain language, follow-through.">
+<meta name="description" content="AJ Ferguson. Knowledge, made ready for people and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #0e0f0e; --ink: #f2efe6; --muted: #9a9588; --line: #2a2c28;
-    --accent: #c9a227;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; background: var(--bg); color: var(--ink);
-    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    font-size: 18px; line-height: 1.45; }
-  body { min-height: 100vh; display: flex; flex-direction: column; }
-  main { flex: 1; max-width: 38rem; margin: 0 auto; padding: 3rem 1.5rem 2rem; }
-  .mark { color: var(--accent); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 1.25rem; }
-  h1 { font-size: 2.1rem; font-weight: 600; letter-spacing: -0.03em; margin: 0 0 0.35rem; }
-  .role { color: var(--muted); margin: 0 0 1.75rem; font-size: 1.05rem; }
-  p { margin: 0 0 1rem; }
-  .rule { border: 0; border-top: 1px solid var(--line); margin: 1.75rem 0; }
-  h2 { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.75rem; font-weight: 600; }
-  ul { margin: 0; padding: 0; list-style: none; }
-  li { padding: 0.55rem 0; border-top: 1px solid var(--line); color: var(--muted); }
-  li strong { color: var(--ink); font-weight: 600; }
-  footer { max-width: 38rem; margin: 0 auto; padding: 0 1.5rem 2.5rem; color: var(--muted); font-size: 0.9rem; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-</style>
-</head>
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#fff;color:#111;font-family:'Cormorant Garamond',Georgia,serif}
+body{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:0 7vw}
+main{text-align:center;opacity:0;animation:in 1.4s ease .2s forwards}
+@keyframes in{to{opacity:1}}
+h1{font-weight:300;font-size:clamp(46px,9vw,124px);letter-spacing:-.01em;line-height:1;margin:0}
+.tag{font-weight:400;font-size:clamp(11px,1.05vw,14px);letter-spacing:.34em;text-transform:uppercase;color:#8a8a8a;margin:clamp(18px,2.4vw,30px) 0 0;line-height:1.7}
+.burger{position:fixed;top:clamp(22px,3vw,36px);left:clamp(22px,3vw,40px);width:28px;height:20px;background:none;border:0;padding:0;cursor:pointer;z-index:3}
+.burger span{display:block;height:1px;background:#111;margin:0 0 8px;transition:transform .35s,opacity .35s}
+.open .burger span:nth-child(1){transform:translateY(9px) rotate(45deg)}.open .burger span:nth-child(2){opacity:0}.open .burger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+nav{position:fixed;inset:0;background:#fff;display:flex;align-items:center;padding-left:clamp(40px,10vw,160px);opacity:0;pointer-events:none;transition:opacity .4s;z-index:2}
+.open nav{opacity:1;pointer-events:auto}
+nav ul{list-style:none;margin:0;padding:0}nav li{margin:0 0 clamp(10px,1.6vw,18px)}
+nav a{font-weight:300;font-size:clamp(34px,5vw,64px);color:#111;text-decoration:none;letter-spacing:-.005em}
+nav a:hover{color:#8a8a8a}
+.soon{font-weight:300;font-size:clamp(34px,5vw,64px);color:#c4c4c4;letter-spacing:-.005em;cursor:default}
+nav small{display:block;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#aaa;margin-top:4px}
+</style></head>
 <body>
-<main>
-  <p class="mark">aj-ferguson.com · preview</p>
-  <h1>AJ Ferguson</h1>
-  <p class="role">Knowledge management · content strategy · information architecture</p>
-  <p>I keep the intake door open and the work moving. Knowledge Management at Blue Cross NC, operations side.</p>
-  <p>Most days that is taking what operations actually needs, writing it so someone can act on it, and keeping several live pieces of work from stepping on each other. Content strategy and information architecture keep that from becoming a trainwreck.</p>
-  <p>I use research, plain language, and follow-through. I talk with peers about where AI is useful in this job, not where it is a slide.</p>
-  <hr class="rule">
-  <h2>On the tray</h2>
-  <ul>
-    <li><strong><a href="last-resort.html">The Last Resort of WPB</a></strong> — ten years founding and running the shop, 1993–2003. Streetwear, graffiti culture, early e-commerce.</li>
-    <li><strong><a href="https://www.chronicle.com/article/Tactics-for-Teaching-Almost/127390/">Chronicle of Higher Education</a></strong> — “Tactics for Teaching (Almost) Paperless Writing,” May 2011.</li>
-    <li><strong>Florida Atlantic University</strong> — writing program, 2007–2010. WAC Instructor, Master Tutor. MFA Creative Writing.</li>
-    <li><strong>Future Proofing Documentation</strong> — an introduction to NLP and knowledge management.</li>
-    <li><strong>Prosci Change Practitioner</strong> · <strong>KCS v6 Fundamentals</strong> — 2023.</li>
-  </ul>
-</main>
-<footer>
-  Preview scaffold · static · domain at GoDaddy until cutover
-</footer>
-</body>
-</html>
+<button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('open')"><span></span><span></span><span></span></button>
+<nav><ul>
+<li><span class="soon">Now<small>Soon</small></span></li>
+<li><span class="soon">Work<small>Soon</small></span></li>
+<li><span class="soon">Writing<small>Soon</small></span></li>
+<li><span class="soon">The Last Resort<small>Soon</small></span></li>
+<li><a href="https://www.linkedin.com/in/aj-ferguson/">LinkedIn</a></li>
+</ul></nav>
+<main><h1>AJ Ferguson</h1><p class="tag">Knowledge, made ready for people and AI</p></main>
+<script>if(location.hash=='#menu')document.body.classList.add('open')</script>
+</body></html>
